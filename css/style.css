@@ -1037,6 +1037,7 @@
 		color: #ffffff;
 		padding: 14em 0em 14em;
 		text-align: center;
+		min-height: 100vh;
 	}
 
 		#banner :last-child {
