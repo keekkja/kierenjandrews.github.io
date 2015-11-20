@@ -149,6 +149,7 @@ span.label.label-under-construction {
   color: #fff;
   text-decoration: none;
   border: 0px transparent solid;
+  cursor: pointer;
 }
 
 .header-wrapper {
