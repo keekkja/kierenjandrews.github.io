@@ -272,3 +272,6 @@ a {
   color: #fff;
   background-size: cover;
 }
+
+section.section-minimal { margin: 0; padding: 0; }
+section.section-minimal iframe { margin: 0; }
