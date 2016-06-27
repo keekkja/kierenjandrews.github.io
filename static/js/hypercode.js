@@ -11,4 +11,4 @@ window.hypercode = {
   }
 };
 
-window.onload = window.hypercode.loadHeaderImage(0,10);
+window.onload = window.hypercode.loadHeaderImage(0,0);
