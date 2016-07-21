@@ -323,4 +323,7 @@ section.section-minimal iframe {
     section {
         padding: 4em 1em;
     }
+    .bg-5 {
+        background-position: center;
+    }
 }
