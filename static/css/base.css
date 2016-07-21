@@ -324,6 +324,7 @@ section.section-minimal iframe {
         padding: 4em 1em;
     }
     .bg-5 {
-        background-position: 28% center;
+        background-position: 50% 10%;
+        background-image: url('https://media.giphy.com/media/z1BSubxpcc6Na/giphy.gif');
     }
 }
