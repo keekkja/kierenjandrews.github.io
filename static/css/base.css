@@ -1,4 +1,5 @@
 /*@import 'http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css';*/
+
 @import 'https://fonts.googleapis.com/css?family=Raleway:200,400,700';
 @import 'https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css';
 @import 'reset.css';
@@ -15,22 +16,20 @@ body {
     line-height: 1.5;
     /*font-family: "Roboto", "Arial", sans-serif;*/
 }
-
 .box {
     max-width: 90%;
     width: 600px;
     margin: 0 auto;
 }
-
 .in-parent {
-  position: absolute;
-  top: 40%;
-  margin: 0 auto;
-  left:0;right:0;
-  z-index: 100;
-  color: #fff;
+    position: absolute;
+    top: 40%;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    color: #fff;
 }
-
 .clearfix {
     clear: both;
 }
@@ -148,6 +147,26 @@ span.label.label-under-construction {
     display: block;
     margin: 0 auto;
     text-align: center;
+}
+.background-portrait {
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    background-color: transparent !important;
+}
+.background-portrait::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    /*background-position: center center;*/
+    background-position: top center;
+    background-image: url("../img/mask.png"), url("../img/grain-overlay.png"), url("../img/selfie.jpg");
+    z-index: -1;
+    will-change: transform;
 }
 .header-logo {
     display: block;
@@ -268,8 +287,6 @@ section.section-minimal {
 section.section-minimal iframe {
     margin: 0;
 }
-
-
 @media (min-width: 800px) {
     header {
         height: 100%;
