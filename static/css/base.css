@@ -44,6 +44,12 @@ header {
     color: #1f2b3d;
     background-attachment: fixed;
     background-position: center;
+    height: 100%;
+    /*min-height: 600px;*/
+    padding: 0;
+    position: relative;
+    background-color: #fff;
+    transition: background-color 0.2s ease;
 }
 section {
     padding: 10em 1em;
@@ -335,7 +341,14 @@ section.section-minimal iframe {
 }
 @media (max-width: 600px) {
     header {
-        padding: 8em 1em;
+        /*padding: 8em 1em;*/
+    }
+    .header-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
     section {
         padding: 4em 1em;
