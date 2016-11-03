@@ -1,7 +1,7 @@
 function initialize() {
 
     var stylesArray = [{
-        "featureType": "road",
+        "featureType": "all",
         "elementType": "labels",
         "stylers": [{
             "visibility": "off"
@@ -9,8 +9,8 @@ function initialize() {
             "grayscale": 100
         }]
     }, {
-        "featureType": "road",
-        "elementType": "geometry",
+        "featureType": "landscape",
+        "elementType": "all",
         "stylers": [{
             "weight": 3
         }, {

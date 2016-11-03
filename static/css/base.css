@@ -41,7 +41,7 @@ header {
     background-color: #fff;
     /*background-image: url('../img/mask.png'), url('../img/wbg5.jpg');*/
     background-size: cover;
-    color: #1f2b3d;
+    color: #646D76;
     background-attachment: fixed;
     background-position: center;
     height: 100%;
@@ -59,7 +59,7 @@ section:nth-of-type(2n) {
 }
 footer {
     padding: 5em 1em;
-    background-color: #3a3a3a;
+    background-color: #646D76;
     color: #fff;
 }
 h2 {
