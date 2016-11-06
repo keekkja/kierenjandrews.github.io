@@ -99,6 +99,10 @@ hr {
 iframe {
     margin-bottom: 2rem;
 }
+small {
+  text-transform: uppercase;
+  font-size: 0.5em;
+}
 p {
     margin-bottom: 1rem;
     line-height: 1.75;
