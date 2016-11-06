@@ -1,0 +1,61 @@
+#lightgallery {
+  width: 100%;
+  display: block;
+}
+
+#lightgallery a {
+  margin: 0;
+  display: block;
+  float: left;
+  width: calc(33% - 10px);
+  border: 0px transparent solid;
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+#lightgallery a:nth-child(n+4) {
+  display: none;
+}
+
+#lightgallery a img {
+  margin: 0;
+  width: 100%;
+  display: block;
+  padding: 0;
+  height: 250px;
+  object-fit: cover;
+  vertical-align: top;
+}
+
+
+
+#lightgallery1 {
+  width: 100%;
+  display: block;
+}
+
+#lightgallery1 a {
+  margin: 0;
+  display: block;
+  float: left;
+  width: calc(33% - 10px);
+  border: 0px transparent solid;
+  line-height: 0;
+  padding: 0;
+  margin: 5px;
+}
+
+#lightgallery1 a:nth-child(n+4) {
+  display: none;
+}
+
+#lightgallery1 a img {
+  margin: 0;
+  width: 100%;
+  display: block;
+  padding: 0;
+  height: 250px;
+  object-fit: cover;
+  vertical-align: top;
+}

@@ -53,6 +53,7 @@ header {
 }
 section {
     padding: 10em 1em;
+    background-color: #fff
 }
 section:nth-of-type(2n) {
     background-color: #fafafa;
@@ -61,6 +62,11 @@ footer {
     padding: 5em 1em;
     background-color: #646D76;
     color: #fff;
+
+}
+footer p{
+    opacity: 0.3
+
 }
 h2 {
     font-size: 2rem;
@@ -92,6 +98,10 @@ hr {
 }
 iframe {
     margin-bottom: 2rem;
+}
+small {
+  text-transform: uppercase;
+  font-size: 0.5em;
 }
 p {
     margin-bottom: 1rem;
@@ -174,6 +184,7 @@ span.label.label-under-construction {
     z-index: -1;
     will-change: transform;
 }
+
 .header-logo {
     display: block;
     text-align: center;
