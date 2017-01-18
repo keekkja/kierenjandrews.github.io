@@ -480,7 +480,7 @@ section.section-minimal iframe {
 /*TEST OF NEW CONTACT ME BUTTON*/
 
 
-$thick : 3px;
+3px;
 $pad : 0.7em;
 $extra : calc(#{$pad} * 1.2);
 $color : #ff5757;
@@ -498,7 +498,7 @@ a {
   transform: translate3d(-50%,-50%,0);
   padding: $pad $extra;
   display: inline-block;
-  border: $thick solid transparent;
+  border: 3px solid transparent;
   position: relative;
   font-size: 1.5em;
   letter-spacing: 0.07em;
@@ -514,10 +514,10 @@ a {
   &:after {
     position: absolute;
     content: '';
-    bottom: -$thick;
+    bottom: -3px;
     left: $extra;
     right: $extra;
-    height: $thick;
+    height: 3px;
     background: $color;
     z-index: -1;
     transition:
@@ -535,40 +535,40 @@ a {
 
   &.-right,
   &.-left {
-    width: $thick;
-    bottom: -$thick;
-    top: -$thick;
+    width: 3px;
+    bottom: -3px;
+    top: -3px;
     transform: scale3d(1,0,1);
   }
 
   &.-top,
   &.-bottom {
-    height: $thick;
-    left: -$thick;
-    right: -$thick;
+    height: 3px;
+    left: -3px;
+    right: -3px;
     transform: scale3d(0,1,1);
   }
 
   &.-right {
-    right: -$thick;
+    right: -3px;
     transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
     transform-origin: top;
   }
 
   &.-top {
-    top: -$thick;
+    top: -3px;
     transition: transform 0.08s linear 0.43s;
     transform-origin: left;
   }
 
   &.-left {
-    left: -$thick;
+    left: -3px;
     transition: transform 0.08s linear 0.51s;
     transform-origin: bottom;
   }
 
   &.-bottom {
-    bottom: -$thick;
+    bottom: -3px;
     transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
     transform-origin: right;
   }
@@ -584,8 +584,8 @@ a:active {
 
   &:after {
     transform: scale3d(0,1,1);
-    right: -$thick;
-    left: -$thick;
+    right: -3px;
+    left: -3px;
     transform-origin: right;
     transition:
       transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
