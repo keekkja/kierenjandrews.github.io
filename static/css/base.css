@@ -479,142 +479,136 @@ section.section-minimal iframe {
 
 /*TEST OF NEW CONTACT ME BUTTON*/
 
-
-3px;
-$pad : 0.7em;
-$extra : calc(#{$pad} * 1.2);
-$color : #ff5757;
-
-body {
-  background: #2d2d2d;
-}
-
-a {
+a.boxed {
   position: fixed;
   cursor: pointer;
-  top: 50vh;
-  left: 50%;
-  color: white;
-  transform: translate3d(-50%,-50%,0);
-  padding: $pad $extra;
+  margin: 0 auto;
+  margin-top: 2.5em;
+  /*top: 50vh;*/
+  text-align: center;
+  /*color: white;*/
+  transform: translate3d(0,-50%,0);
+  padding: 0.7em calc(0.7em * 1.2);
   display: inline-block;
   border: 3px solid transparent;
   position: relative;
   font-size: 1.5em;
   letter-spacing: 0.07em;
 
-  .text {
-    // padding: 0 0.3em;
-    font-family: montserrat;
-    transform: translate3d(0,$pad,0);
-    display: block;
-    transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
-  }
+}
 
-  &:after {
-    position: absolute;
-    content: '';
-    bottom: -3px;
-    left: $extra;
-    right: $extra;
-    height: 3px;
-    background: $color;
-    z-index: -1;
-    transition:
-      transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
-      right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
-      left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
-    transform-origin: left;
-  }
+a.boxed .text {
+  padding: 0 0.3em;
+  font-family: montserrat;
+  transform: translate3d(0,0.7em,0);
+  display: block;
+  transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
+}
 
+a.boxed:after {
+  position: absolute;
+  content: '';
+  bottom: -3px;
+  left: calc(0.7em * 1.2);
+  right: calc(0.7em * 1.2);
+  height: 3px;
+  background: #ff5757;
+  z-index: -1;
+  transition:
+    transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
+    right 0.2s cubic-bezier(.04,.48,0,1) 0.6s,
+    left 0.4s cubic-bezier(.04,.48,0,1) 0.6s;
+  transform-origin: left;
 }
 
 .line {
   position: absolute;
-  background: $color;
-
-  &.-right,
-  &.-left {
-    width: 3px;
-    bottom: -3px;
-    top: -3px;
-    transform: scale3d(1,0,1);
-  }
-
-  &.-top,
-  &.-bottom {
-    height: 3px;
-    left: -3px;
-    right: -3px;
-    transform: scale3d(0,1,1);
-  }
-
-  &.-right {
-    right: -3px;
-    transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
-    transform-origin: top;
-  }
-
-  &.-top {
-    top: -3px;
-    transition: transform 0.08s linear 0.43s;
-    transform-origin: left;
-  }
-
-  &.-left {
-    left: -3px;
-    transition: transform 0.08s linear 0.51s;
-    transform-origin: bottom;
-  }
-
-  &.-bottom {
-    bottom: -3px;
-    transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
-    transform-origin: right;
-  }
+  background: #ff5757;
 }
 
-a:hover,
-a:active {
+.line.-right,
+.line.-left {
+  width: 3px;
+  bottom: -3px;
+  top: -3px;
+  transform: scale3d(1,0,1);
+}
 
-  .text {
-    transform: translate3d(0,0,0);
-    transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
-  }
+.line.-top,
+.line.-bottom {
+  height: 3px;
+  left: -3px;
+  right: -3px;
+  transform: scale3d(0,1,1);
+}
 
-  &:after {
-    transform: scale3d(0,1,1);
-    right: -3px;
-    left: -3px;
-    transform-origin: right;
-    transition:
-      transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
-      right 0.2s cubic-bezier(1,0,.65,1.01),
-      left 0s 0.3s;
-  }
+.line.-right {
+  right: -3px;
+  transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
+  transform-origin: top;
+}
 
-  .line {
-    transform: scale3d(1,1,1);
+.line.-top {
+  top: -3px;
+  transition: transform 0.08s linear 0.43s;
+  transform-origin: left;
+}
 
-    &.-right {
-      transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
-      transform-origin: bottom;
-    }
+.line.-left {
+  left: -3px;
+  transition: transform 0.08s linear 0.51s;
+  transform-origin: bottom;
+}
 
-    &.-top {
-      transition: transform 0.08s linear 0.4s;
-      transform-origin: right;
-    }
+.line.-bottom {
+  bottom: -3px;
+  transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
+  transform-origin: right;
+}
 
-    &.-left {
-      transition: transform 0.08s linear 0.48s;
-      transform-origin: top;
-    }
+a.boxed:hover .text,
+a.boxed:active .text {
+  transform: translate3d(0,0,0);
+  transition: transform 0.6s cubic-bezier(.2,0,0,1) 0.4s;
+}
 
-    &.-bottom {
-      transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
-      transform-origin: left;
-    }
-  }
+a.boxed:hover:after,
+a.boxed:active:after {
+  transform: scale3d(0,1,1);
+  right: -3px;
+  left: -3px;
+  transform-origin: right;
+  transition:
+    transform 0.2s cubic-bezier(1,0,.65,1.01) 0.17s,
+    right 0.2s cubic-bezier(1,0,.65,1.01),
+    left 0s 0.3s;
+}
 
+a.boxed:hover .line,
+a.boxed:active .line {
+  transform: scale3d(1,1,1);
+}
+
+a.boxed:hover .line.-right,
+a.boxed:active .line.-right {
+  transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.2s;
+  transform-origin: bottom;
+}
+
+a.boxed:hover .line.-top,
+a.boxed:active .line.-top {
+  transition: transform 0.08s linear 0.4s;
+  transform-origin: right;
+}
+
+a.boxed:hover .line.-left,
+a.boxed:active .line.-left {
+  transition: transform 0.08s linear 0.48s;
+  transform-origin: top;
+}
+
+a.boxed:hover .line.-bottom,
+a.boxed:active .line.-bottom {
+  transition: transform 0.5s cubic-bezier(0,.53,.29,1) 0.56s;
+  transform-origin: left;
 }
