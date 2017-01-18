@@ -505,6 +505,7 @@ a.boxed .text {
   transition: transform 0.4s cubic-bezier(.2,0,0,1) 0.4s;
 }
 
+
 a.boxed:after {
   position: absolute;
   content: '';
