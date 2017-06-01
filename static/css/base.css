@@ -67,12 +67,20 @@ section:nth-of-type(2n) {
 
 footer {
     padding: 2em 1em;
-    background-color: #ff5757;
+    background-color: #1e262c;
     color: #fff;
+    background-image: url('../img/ribbon.min.svg');
+    background-position: bottom center;
+    background-size: 10px 40px;
+    background-repeat: repeat-x;
 }
 
 footer p {
     opacity: 0.3
+}
+
+footer p.align-center {
+    margin-bottom: 3.2rem;
 }
 
 h2 {
@@ -222,13 +230,12 @@ span.label {
 /*Kieren Andrews*/
 
 .header-name {
-    font-weight: 600;
     font-size: 2rem;
     letter-spacing: 0.25rem;
     padding-bottom: 0.25em;
     line-height: 1.5;
     padding: 0.25rem 0.75rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 1rem;
     display: inline-block;
 }
 
@@ -236,9 +243,9 @@ span.label {
 /*IT SPECIALIST*/
 
 .header-role {
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: 0.125rem;
-    margin-bottom: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 
@@ -475,7 +482,7 @@ section.section-minimal iframe {
 
 
 
-/*TEST OF NEW CONTACT ME BUTTON*/
+/*CONTACT ME BUTTON*/
 
 a.boxed {
   position: fixed;
@@ -511,7 +518,7 @@ a.boxed:after {
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 3px;
-  background: #ff5757;
+  background: #f1f2f2;
   z-index: -1;
   transition:
     transform 0.8s cubic-bezier(1,0,.37,1) 0.2s,
@@ -522,7 +529,7 @@ a.boxed:after {
 
 .line {
   position: absolute;
-  background: #ff5757;
+  background: #f1f2f2;
 }
 
 .line.-right,
@@ -545,24 +552,28 @@ a.boxed:after {
   right: -3px;
   transition: transform 0.1s cubic-bezier(1,0,.65,1.01) 0.23s;
   transform-origin: top;
+  background-color: #ea4335;
 }
 
 .line.-top {
   top: -3px;
   transition: transform 0.08s linear 0.43s;
   transform-origin: left;
+  background-color: #fbbc05;
 }
 
 .line.-left {
   left: -3px;
   transition: transform 0.08s linear 0.51s;
   transform-origin: bottom;
+  background-color: #34a853;
 }
 
 .line.-bottom {
   bottom: -3px;
   transition: transform 0.3s cubic-bezier(1,0,.65,1.01);
   transform-origin: right;
+  background-color: #4285f4;
 }
 
 a.boxed:hover .text,
