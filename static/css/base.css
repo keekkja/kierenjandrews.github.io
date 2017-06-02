@@ -71,7 +71,7 @@ footer {
     color: #fff;
     background-image: url('../img/ribbon.min.svg');
     background-position: bottom center;
-    background-size: 10px 40px;
+    background-size: 4px 20px;
     background-repeat: repeat-x;
 }
 
@@ -80,7 +80,7 @@ footer p {
 }
 
 footer p.align-center {
-    margin-bottom: 3.2rem;
+    margin-bottom: 1rem;
 }
 
 h2 {
