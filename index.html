@@ -38,15 +38,21 @@
             <p class="align-justify">Hey I'm Kieren,</p>
             <p class="align-justify">I'm currently established in Melbourne, Australia. But have a spirit for traveling this world.</p>
             <p class="align-justify">Studying a Bachelor in Information Technology Cyber Security at Deakin University, on top of having a Diploma and Certificate 4 in Information Technology Networking, through Swinburne University.</p>
-            <p class="align-justify">My passions would have to include; photography, coffee, film &amp; music, pizza and all things .</p>
+            <p class="align-justify">My passions would have to include; photography, drinking tea, film &amp; TV, music, pizza, Netflix and all things that are shiny and .</p>
             <p class="align-justify">If you want to get to know more about me, follow me on Twitter.</p>
+            <br/>
+            <br/>
+            <a class="twitter-follow-button"
+              href="https://twitter.com/kierenjandrews">
+            Follow @kierenjandrews</a>
+
         </div>
     </section>
 
 
     <!-- SERVICES -->
 
-    <section>
+    <!-- <section>
         <div class="box align-center">
             <h2 class="align-center">What I Can Do For You</h2>
             <p class="align-center">I can* (and this isn't an exhaustive list, but it gives a rough outline):</p>
@@ -58,12 +64,12 @@
                 <p<center>Training in a wide range of devices, operating systems, apps and programs^</p>
                 <p<center>Provide advice and answer questions you may have</p>
                 <p<center>Teach your Nanna how to use a mobile phone</p>
-            </p>
+            </p> -->
 
 
             <!-- <div class="align-center">
                 <a class="boxed" a href="services.html" style="text-decoration:none; color:black" style="">
-                    <span class="text">Learn More</span>
+                    <span class="text">Want to know more?</span>
                     <span class="line -right"></span>
                     <span class="line -top"></span>
                     <span class="line -left"></span>
@@ -93,11 +99,15 @@
     <!-- GOOGLE MAPS -->
 
     <section class="section-minimal">
+        </div>
         <div style="height: 450px;" id="map"></div>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqlaFbinND4aOyfIya0SFJJjajcgiv3Dc">
         </script>
         <script src="./static/js/gmaps.js"></script>
     </section>
+
+
+    <!-- QUOTE -->
 
     <section>
         <div class="box">
@@ -131,6 +141,17 @@
     </section>
 
 
+    <!-- TWITTER FEED -->
+
+    <section>
+        <div class="box align-center">
+            <h2 class="align-center">Tweets by ME!</h2>
+            <p class="align-center"> aka... @kierenjandrews </p>
+            <a class="twitter-timeline" href="https://twitter.com/kierenjandrews">Tweets by kierenjandrews</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+    </section>
+
+
     <!-- FOOTER + SOCIAL ICONS -->
 
     <footer>
@@ -139,6 +160,7 @@
                 <a onclick="window.location.href='mailto:kierenjandrews@gmail.com?subject= Getting in touch, from kandrews.tk';" target="_blank"><i class="socicon-telegram"></i></a>
                 <a href="https://linkedin.com/in/kierenjandrews" target="_blank"><i class="socicon-linkedin"></i></a>
                 <a href="http://twitter.com/kierenjandrews" target="_blank"><i class="socicon-twitter"></i></a>
+                <a href="http://instagram.com/kierenjandrews" target="_blank"><i class="socicon-instagram"></i></a>
                 <!-- <a href="http://github.com/kierenjandrews" target="_blank"><i class="socicon-github"></i></a> -->
 
 
@@ -165,6 +187,25 @@
       ga('send', 'pageview');
 
     </script>
+    <script>
+      window.twttr = (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0],
+      t = window.twttr || {};
+      if (d.getElementById(id)) return t;
+      js = d.createElement(s);
+      js.id = id;
+      js.src = "https://platform.twitter.com/widgets.js";
+      fjs.parentNode.insertBefore(js, fjs);
+
+      t._e = [];
+      t.ready = function(f) {
+        t._e.push(f);
+          };
+
+        return t;
+      }(document, "script", "twitter-wjs"));
+    </script>
+
 </body>
 
 </html>
