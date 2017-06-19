@@ -213,7 +213,7 @@ span.label {
     background-size: cover;
     /*background-position: center center;*/
     background-position: top center;
-    background-image: url("../img/mask.png"), url("../img/grain-overlay.png"), url("../img/selfie.jpg");
+    background-image: url("../img/mask.png"), url("../img/selfie.jpg");
     z-index: -1;
     will-change: transform;
 }
