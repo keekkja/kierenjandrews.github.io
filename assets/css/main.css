@@ -2188,6 +2188,31 @@
 		background-color: #6fc3df;
 	}
 
+	a.icon.alt.fa-camera:hover:before {
+		background: #888;
+		color: white;
+	}
+
+	a.icon.alt.fa-github:hover:before {
+		background: #383838;
+		color: white;
+	}
+
+	a.icon.alt.fa-twitter:hover:before {
+		background: #55acee;
+		color: white;
+	}
+
+	a.icon.alt.fa-linkedin:hover:before {
+		background: #0077B5;
+		color: white;
+	}
+
+	a.icon.alt.fa-instagram:hover:before {
+		background: linear-gradient(45deg, #f7da13 0%, #ff533c 40%, magenta 60%, #2049f9 100%);
+		color: white;
+	}
+
 	a.icon.alt:active:before {
 		background-color: #37a6cb;
 	}
@@ -2782,6 +2807,10 @@
 			width: 40%;
 		}
 
+		.tiles article.top-image {
+			background-position: top !important;
+		}
+
 			.tiles article .image {
 				display: none;
 			}
@@ -2838,7 +2867,7 @@
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.25;
 			}
 
 			.tiles article.is-transitioning {
@@ -2879,6 +2908,14 @@
 
 			.tiles article:nth-child(6n):before {
 				background-color: #87c5a4;
+			}
+
+			.tiles article.colorize:before {
+				mix-blend-mode: color;
+			}
+
+			.tiles article.no-color:before {
+				background-color: transparent !important;
 			}
 
 		@media screen and (max-width: 1280px) {
